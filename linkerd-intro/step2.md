@@ -1,4 +1,4 @@
-Install Linkerd using [this Kubernetes config]https://raw.githubusercontent.com/linkerd/linkerd-examples/master/k8s-daemonset/k8s/linkerd.yml).
+Install Linkerd using [this Kubernetes config](https://raw.githubusercontent.com/linkerd/linkerd-examples/master/k8s-daemonset/k8s/linkerd.yml).
 This will install Linkerd as a DaemonSet (i.e., one instance per host) running
 in the default Kubernetes namespace:
 
