@@ -10,7 +10,9 @@ Linkerd-viz into the default namespace:
 Open Linkerd-viz’s external IP to view the dashboard:
 
 `VIZ_HOST_IP=$(kubectl get po -l name=linkerd-viz -o jsonpath="{.items[0].status.hostIP}")`{{execute}}
+
 `VIZ_NODE_PORT=$(kubectl get svc linkerd-viz -o 'jsonpath={.spec.ports[0].nodePort}')`{{execute}}
+
 `open http://$VIZ_HOST_IP:$VIZ_NODE_PORT`{{execute}}
 
 You should see a dashboard, including selectors by service and instance. All
