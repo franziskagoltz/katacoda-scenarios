@@ -24,6 +24,11 @@
       "text": "finish.md"
     }
   },
+  "assets": {
+    "host01": [
+      {"file": "tunnel-linkerd.sh", "target": "~/", "chmod": "+x"}
+    ]
+  },
   "icon": "fa-kubernetes",
   "environment": {
     "uilayout": "terminal"
