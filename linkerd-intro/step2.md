@@ -5,9 +5,14 @@ in the default Kubernetes namespace:
 `kubectl apply -f https://raw.githubusercontent.com/linkerd/linkerd-examples/master/k8s-daemonset/k8s/linkerd.yml`{{execute}}
 You can confirm that installation was successful by viewing Linkerd’s admin page:
 
+Normally you'd extract the `HOST_IP` and `NODE_PORT` when running it locally
+on Minikube, but because this tutorial is running in Katacoda, we have to use
+a script to see the Linkerd Admin dashboard. Run:
 
-`HOST_IP=$(kubectl get po -l app=l5d -o jsonpath="{.items[0].status.hostIP}")`{{execute}}
+`./tunnel-linkerd.sh`{{execute}}
 
-`NODE_PORT_ADMIN=$(kubectl get svc l5d -o 'jsonpath={.spec.ports[2].nodePort}')`{{execute}}
+This will start the dashboard and setup a tunnel for you to view it from. Cut
+and paste the URL that is output into your browser.
 
-`open http://$HOST_IP:$NODE_PORT_ADMIN`{{execute}}
+For instructions on how to run this tutorial locally, visit:
+https://linkerd.io/tutorials/part-one/

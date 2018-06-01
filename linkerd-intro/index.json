@@ -26,9 +26,7 @@
   },
   "icon": "fa-kubernetes",
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "Linkerd Admin", "port": "$NODE_PORT_ADMIN"}, {"name": "Linkerd-Viz", "port": "$VIZ_NODE_PORT"}]
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "minikube"
