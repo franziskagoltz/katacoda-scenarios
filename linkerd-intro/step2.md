@@ -3,7 +3,7 @@ This will install Linkerd as a DaemonSet (i.e., one instance per host) running
 in the default Kubernetes namespace:
 
 `kubectl apply -f https://raw.githubusercontent.com/linkerd/linkerd-examples/master/k8s-daemonset/k8s/linkerd.yml`{{execute}}
-You can confirm that installation was successful by viewing Linkerd’s admin page:
+You can confirm that the installation was successful by viewing Linkerd’s admin page.
 
 Normally you'd extract the `HOST_IP` and `NODE_PORT` when running it locally
 on Minikube, but because this tutorial is running in Katacoda, we have to use
